@@ -26,6 +26,23 @@ License: Apache License 2.0
     The 28-layer bidirectional encoder used as the Laya backbone.
 
 ================================================================================
+Files redistributed under base/ (for standalone inference)
+================================================================================
+The following files are copied verbatim from the Laya repository so that this
+project can run without downloading the full base model. They remain under the
+original Apache License 2.0 and the original copyright:
+
+    base/rl_common.py                 <- rl_common.py
+    base/rl_agent_config.json         <- rl_agent_config.json
+    base/encoder/config.json          <- encoder/config.json
+    base/tokenizer/tokenizer.json     <- tokenizer/tokenizer.json
+    base/tokenizer/tokenizer_config.json
+
+These define the ModernBERT architecture, the tokenizer, and the shared
+sequence-rendering / model-construction code. No original weights are
+included here.
+
+================================================================================
 Third-party runtime dependencies (not vendored, installed via pip)
 ================================================================================
 PyTorch           BSD-3-Clause   https://github.com/pytorch/pytorch

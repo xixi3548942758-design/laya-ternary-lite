@@ -20,7 +20,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FULL = os.path.join(HERE, "..", "laya-full")
+# 推理只需要架构定义 + tokenizer + rl_common，这些都随仓库带了（base/，共 3.5 MB），
+# 所以本文件可以脱离 laya-full 独立运行。只有「重新量化」才需要完整的 laya-full。
+_LOCAL_BASE = os.path.join(HERE, "base")
+FULL = _LOCAL_BASE if os.path.isdir(_LOCAL_BASE) else os.path.join(HERE, "..", "laya-full")
 if FULL not in sys.path:
     sys.path.insert(0, FULL)
 
@@ -265,8 +268,9 @@ class _MHAUnpack:
 
 # --------------------------------------------------------------------------- 引擎
 class LayaLite:
-    def __init__(self, lite_dir=None, full_dir=FULL, device="cpu", tile=512, verbose=False,
+    def __init__(self, lite_dir=None, full_dir=None, device="cpu", tile=512, verbose=False,
                  packed_on_gpu=None):
+        full_dir = full_dir or FULL
         lite_dir = lite_dir or os.path.join(HERE, "out")
         self.store = TernaryStore(lite_dir)
         self.device = torch.device(device)

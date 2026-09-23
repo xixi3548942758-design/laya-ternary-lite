@@ -87,24 +87,38 @@ print(lite.system_one(state, questions))
 
 `LayaLite.system_one()` 的签名与返回结构与原模型的 `RLAgent.system_one()` **完全一致**，可直接替换。
 
-### 目录要求
+### 开箱即用
+
+**推理不需要下载原模型。** 仓库自带 `base/`（3.5 MB），内含架构定义、tokenizer 和
+`rl_common.py`，`LayaLite` 会自动使用它：
 
 ```
-your-project/
-├── laya-full/          # 原始 FP16 模型（从 HuggingFace 下载）
-│   ├── model.safetensors
-│   ├── encoder/  tokenizer/
-│   ├── rl_agent_config.json
-│   └── rl_common.py
-└── laya-ternary-lite/  # 本项目
-    ├── out/            # 三值权重
-    └── *.py
+laya-ternary-lite/
+├── base/           ← 随仓库自带，3.5 MB（架构 + tokenizer + rl_common）
+├── out/            ← 三值权重，88 MB
+└── *.py
 ```
 
 ```bash
-pip install modelscope
-modelscope download --model convaiinnovations/laya --local_dir ./laya-full
+git clone https://github.com/xixi3548942758-design/laya-ternary-lite.git
+cd laya-ternary-lite
+pip install -r requirements.txt
+python -c "
+import sys; sys.path.insert(0,'.')
+from runtime import LayaLite
+lite = LayaLite(device='cpu')
+print(lite.system_one({'subject':'Billed twice, please refund.'},
+      {'d':{'type':'choice','instructions':'Which department?',
+           'criteria':{'billing':'invoices','technical':'bugs'}}}))
+"
 ```
+
+> **只有「重新量化」才需要完整的 `laya-full`**（含 `model.safetensors`），
+> 因为要拿原始 FP16 权重当 teacher：
+> ```bash
+> pip install modelscope
+> modelscope download --model convaiinnovations/laya --local_dir ./laya-full
+> ```
 
 ---
 
@@ -261,6 +275,7 @@ laya-ternary-lite/
 ├── NOTICE                  归属声明 + 修改说明
 ├── README.md
 ├── requirements.txt
+├── base/                   随仓库自带：架构 + tokenizer + rl_common（3.5 MB）
 ├── ternary.py              量化/打包核心：g128 absmean + 5 trits/byte
 ├── runtime.py              推理引擎（LayaLite / TernaryLinear / TernaryEmbedding）
 ├── calib_data.py           校准语料构造
