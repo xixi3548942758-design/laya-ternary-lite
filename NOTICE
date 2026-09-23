@@ -1,0 +1,54 @@
+laya-ternary-lite
+Copyright 2026 the laya-ternary-lite contributors
+
+This product is a derivative work of the following Apache-2.0 licensed projects.
+The original copyright notices are reproduced below as required by Section 4
+of the Apache License, Version 2.0.
+
+================================================================================
+Laya — multilingual, non-autoregressive System 1 decision model
+================================================================================
+Source:  https://huggingface.co/convaiinnovations/laya
+Author:  Convai Innovations
+License: Apache License 2.0
+
+    The model checkpoint at the repository root ("laya", ModernBERT-large
+    backbone, 421M parameters) is the base model that this project quantizes
+    to ternary weights.
+
+================================================================================
+ModernBERT-large (backbone encoder)
+================================================================================
+Source:  https://huggingface.co/answerdotai/ModernBERT-large
+Author:  Answer.AI / LightOn
+License: Apache License 2.0
+
+    The 28-layer bidirectional encoder used as the Laya backbone.
+
+================================================================================
+Third-party runtime dependencies (not vendored, installed via pip)
+================================================================================
+PyTorch           BSD-3-Clause   https://github.com/pytorch/pytorch
+Transformers      Apache-2.0      https://github.com/huggingface/transformers
+safetensors       Apache-2.0      https://github.com/huggingface/safetensors
+NumPy             BSD-3-Clause    https://github.com/numpy/numpy
+psutil            BSD-3-Clause    https://github.com/giampaolo/psutil
+
+================================================================================
+Changes made to the base model
+================================================================================
+The quantized artifacts under out/ are a modified form of the original Laya
+weights. Per Section 4(b) of the Apache License, the nature of the changes is
+documented here:
+
+  * All 122 weight matrices with >= 16K parameters were replaced by ternary
+    values in {-1, 0, +1} with one FP16 scale per group of 128 weights
+    (1.738 effective bits per weight, 9.17x smaller than the FP16 original).
+  * Normalization weights, biases, the type embedding, the act_head, and the
+    per-question-type temperature buffer were left at their original precision.
+  * The ternary assignments were produced by GPTQ-style layer-wise calibration
+    followed by STE self-distillation fine-tuning against the original model's
+    own outputs.
+
+No copyright notice from the original works has been removed, and the
+derivative weights remain available under the Apache License, Version 2.0.

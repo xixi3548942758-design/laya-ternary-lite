@@ -1,0 +1,19 @@
+# 中间产物（各含 teacher 缓存约 1.7 GB，可重算）
+work/
+work_ft/
+work_calib_backup/
+work_smoke/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 日志与临时文件
+*.log
+*.tmp
+
+# 上游模型（自行下载，不入库）
+laya-full/

@@ -1,0 +1,2404 @@
+{
+ "format": "laya-ternary-gptq-v1",
+ "group": 128,
+ "trits_per_byte": 5,
+ "quantized": {
+  "encoder.embeddings.tok_embeddings.weight": {
+   "shape": [
+    50368,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 50368,
+   "packed_off": 0,
+   "packed_len": 10315367,
+   "scale_off": 0,
+   "scale_len": 805888,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.0.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 10315367,
+   "packed_len": 209716,
+   "scale_off": 805888,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.0.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 10525083,
+   "packed_len": 629146,
+   "scale_off": 822272,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.0.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 11154229,
+   "packed_len": 1074791,
+   "scale_off": 871424,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.0.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 12229020,
+   "packed_len": 550503,
+   "scale_off": 955392,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.1.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 12779523,
+   "packed_len": 209716,
+   "scale_off": 998400,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.1.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 12989239,
+   "packed_len": 629146,
+   "scale_off": 1014784,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.1.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 13618385,
+   "packed_len": 1074791,
+   "scale_off": 1063936,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.1.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 14693176,
+   "packed_len": 550503,
+   "scale_off": 1147904,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.10.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 15243679,
+   "packed_len": 209716,
+   "scale_off": 1190912,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.10.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 15453395,
+   "packed_len": 629146,
+   "scale_off": 1207296,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.10.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 16082541,
+   "packed_len": 1074791,
+   "scale_off": 1256448,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.10.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 17157332,
+   "packed_len": 550503,
+   "scale_off": 1340416,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.11.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 17707835,
+   "packed_len": 209716,
+   "scale_off": 1383424,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.11.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 17917551,
+   "packed_len": 629146,
+   "scale_off": 1399808,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.11.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 18546697,
+   "packed_len": 1074791,
+   "scale_off": 1448960,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.11.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 19621488,
+   "packed_len": 550503,
+   "scale_off": 1532928,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.12.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 20171991,
+   "packed_len": 209716,
+   "scale_off": 1575936,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.12.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 20381707,
+   "packed_len": 629146,
+   "scale_off": 1592320,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.12.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 21010853,
+   "packed_len": 1074791,
+   "scale_off": 1641472,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.12.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 22085644,
+   "packed_len": 550503,
+   "scale_off": 1725440,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.13.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 22636147,
+   "packed_len": 209716,
+   "scale_off": 1768448,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.13.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 22845863,
+   "packed_len": 629146,
+   "scale_off": 1784832,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.13.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 23475009,
+   "packed_len": 1074791,
+   "scale_off": 1833984,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.13.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 24549800,
+   "packed_len": 550503,
+   "scale_off": 1917952,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.14.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 25100303,
+   "packed_len": 209716,
+   "scale_off": 1960960,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.14.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 25310019,
+   "packed_len": 629146,
+   "scale_off": 1977344,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.14.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 25939165,
+   "packed_len": 1074791,
+   "scale_off": 2026496,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.14.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 27013956,
+   "packed_len": 550503,
+   "scale_off": 2110464,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.15.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 27564459,
+   "packed_len": 209716,
+   "scale_off": 2153472,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.15.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 27774175,
+   "packed_len": 629146,
+   "scale_off": 2169856,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.15.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 28403321,
+   "packed_len": 1074791,
+   "scale_off": 2219008,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.15.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 29478112,
+   "packed_len": 550503,
+   "scale_off": 2302976,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.16.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 30028615,
+   "packed_len": 209716,
+   "scale_off": 2345984,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.16.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 30238331,
+   "packed_len": 629146,
+   "scale_off": 2362368,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.16.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 30867477,
+   "packed_len": 1074791,
+   "scale_off": 2411520,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.16.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 31942268,
+   "packed_len": 550503,
+   "scale_off": 2495488,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.17.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 32492771,
+   "packed_len": 209716,
+   "scale_off": 2538496,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.17.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 32702487,
+   "packed_len": 629146,
+   "scale_off": 2554880,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.17.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 33331633,
+   "packed_len": 1074791,
+   "scale_off": 2604032,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.17.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 34406424,
+   "packed_len": 550503,
+   "scale_off": 2688000,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.18.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 34956927,
+   "packed_len": 209716,
+   "scale_off": 2731008,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.18.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 35166643,
+   "packed_len": 629146,
+   "scale_off": 2747392,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.18.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 35795789,
+   "packed_len": 1074791,
+   "scale_off": 2796544,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.18.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 36870580,
+   "packed_len": 550503,
+   "scale_off": 2880512,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.19.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 37421083,
+   "packed_len": 209716,
+   "scale_off": 2923520,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.19.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 37630799,
+   "packed_len": 629146,
+   "scale_off": 2939904,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.19.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 38259945,
+   "packed_len": 1074791,
+   "scale_off": 2989056,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.19.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 39334736,
+   "packed_len": 550503,
+   "scale_off": 3073024,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.2.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 39885239,
+   "packed_len": 209716,
+   "scale_off": 3116032,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.2.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 40094955,
+   "packed_len": 629146,
+   "scale_off": 3132416,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.2.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 40724101,
+   "packed_len": 1074791,
+   "scale_off": 3181568,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.2.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 41798892,
+   "packed_len": 550503,
+   "scale_off": 3265536,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.20.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 42349395,
+   "packed_len": 209716,
+   "scale_off": 3308544,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.20.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 42559111,
+   "packed_len": 629146,
+   "scale_off": 3324928,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.20.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 43188257,
+   "packed_len": 1074791,
+   "scale_off": 3374080,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.20.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 44263048,
+   "packed_len": 550503,
+   "scale_off": 3458048,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.21.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 44813551,
+   "packed_len": 209716,
+   "scale_off": 3501056,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.21.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 45023267,
+   "packed_len": 629146,
+   "scale_off": 3517440,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.21.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 45652413,
+   "packed_len": 1074791,
+   "scale_off": 3566592,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.21.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 46727204,
+   "packed_len": 550503,
+   "scale_off": 3650560,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.22.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 47277707,
+   "packed_len": 209716,
+   "scale_off": 3693568,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.22.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 47487423,
+   "packed_len": 629146,
+   "scale_off": 3709952,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.22.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 48116569,
+   "packed_len": 1074791,
+   "scale_off": 3759104,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.22.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 49191360,
+   "packed_len": 550503,
+   "scale_off": 3843072,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.23.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 49741863,
+   "packed_len": 209716,
+   "scale_off": 3886080,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.23.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 49951579,
+   "packed_len": 629146,
+   "scale_off": 3902464,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.23.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 50580725,
+   "packed_len": 1074791,
+   "scale_off": 3951616,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.23.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 51655516,
+   "packed_len": 550503,
+   "scale_off": 4035584,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.24.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 52206019,
+   "packed_len": 209716,
+   "scale_off": 4078592,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.24.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 52415735,
+   "packed_len": 629146,
+   "scale_off": 4094976,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.24.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 53044881,
+   "packed_len": 1074791,
+   "scale_off": 4144128,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.24.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 54119672,
+   "packed_len": 550503,
+   "scale_off": 4228096,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.25.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 54670175,
+   "packed_len": 209716,
+   "scale_off": 4271104,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.25.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 54879891,
+   "packed_len": 629146,
+   "scale_off": 4287488,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.25.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 55509037,
+   "packed_len": 1074791,
+   "scale_off": 4336640,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.25.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 56583828,
+   "packed_len": 550503,
+   "scale_off": 4420608,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.26.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 57134331,
+   "packed_len": 209716,
+   "scale_off": 4463616,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.26.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 57344047,
+   "packed_len": 629146,
+   "scale_off": 4480000,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.26.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 57973193,
+   "packed_len": 1074791,
+   "scale_off": 4529152,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.26.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 59047984,
+   "packed_len": 550503,
+   "scale_off": 4613120,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.27.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 59598487,
+   "packed_len": 209716,
+   "scale_off": 4656128,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.27.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 59808203,
+   "packed_len": 629146,
+   "scale_off": 4672512,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.27.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 60437349,
+   "packed_len": 1074791,
+   "scale_off": 4721664,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.27.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 61512140,
+   "packed_len": 550503,
+   "scale_off": 4805632,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.3.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 62062643,
+   "packed_len": 209716,
+   "scale_off": 4848640,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.3.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 62272359,
+   "packed_len": 629146,
+   "scale_off": 4865024,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.3.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 62901505,
+   "packed_len": 1074791,
+   "scale_off": 4914176,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.3.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 63976296,
+   "packed_len": 550503,
+   "scale_off": 4998144,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.4.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 64526799,
+   "packed_len": 209716,
+   "scale_off": 5041152,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.4.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 64736515,
+   "packed_len": 629146,
+   "scale_off": 5057536,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.4.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 65365661,
+   "packed_len": 1074791,
+   "scale_off": 5106688,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.4.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 66440452,
+   "packed_len": 550503,
+   "scale_off": 5190656,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.5.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 66990955,
+   "packed_len": 209716,
+   "scale_off": 5233664,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.5.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 67200671,
+   "packed_len": 629146,
+   "scale_off": 5250048,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.5.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 67829817,
+   "packed_len": 1074791,
+   "scale_off": 5299200,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.5.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 68904608,
+   "packed_len": 550503,
+   "scale_off": 5383168,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.6.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 69455111,
+   "packed_len": 209716,
+   "scale_off": 5426176,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.6.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 69664827,
+   "packed_len": 629146,
+   "scale_off": 5442560,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.6.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 70293973,
+   "packed_len": 1074791,
+   "scale_off": 5491712,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.6.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 71368764,
+   "packed_len": 550503,
+   "scale_off": 5575680,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.7.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 71919267,
+   "packed_len": 209716,
+   "scale_off": 5618688,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.7.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 72128983,
+   "packed_len": 629146,
+   "scale_off": 5635072,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.7.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 72758129,
+   "packed_len": 1074791,
+   "scale_off": 5684224,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.7.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 73832920,
+   "packed_len": 550503,
+   "scale_off": 5768192,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.8.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 74383423,
+   "packed_len": 209716,
+   "scale_off": 5811200,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.8.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 74593139,
+   "packed_len": 629146,
+   "scale_off": 5827584,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.8.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 75222285,
+   "packed_len": 1074791,
+   "scale_off": 5876736,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.8.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 76297076,
+   "packed_len": 550503,
+   "scale_off": 5960704,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.9.attn.Wo.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 76847579,
+   "packed_len": 209716,
+   "scale_off": 6003712,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.9.attn.Wqkv.weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 77057295,
+   "packed_len": 629146,
+   "scale_off": 6020096,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.9.mlp.Wi.weight": {
+   "shape": [
+    5248,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 5248,
+   "packed_off": 77686441,
+   "packed_len": 1074791,
+   "scale_off": 6069248,
+   "scale_len": 83968,
+   "scale_dtype": "F16"
+  },
+  "encoder.layers.9.mlp.Wo.weight": {
+   "shape": [
+    1024,
+    2624
+   ],
+   "in_pad": 2688,
+   "groups_per_row": 21,
+   "out_features": 1024,
+   "packed_off": 78761232,
+   "packed_len": 550503,
+   "scale_off": 6153216,
+   "scale_len": 43008,
+   "scale_dtype": "F16"
+  },
+  "head.layers.0.linear1.weight": {
+   "shape": [
+    4096,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 4096,
+   "packed_off": 79311735,
+   "packed_len": 838861,
+   "scale_off": 6196224,
+   "scale_len": 65536,
+   "scale_dtype": "F16"
+  },
+  "head.layers.0.linear2.weight": {
+   "shape": [
+    1024,
+    4096
+   ],
+   "in_pad": 4096,
+   "groups_per_row": 32,
+   "out_features": 1024,
+   "packed_off": 80150596,
+   "packed_len": 838861,
+   "scale_off": 6261760,
+   "scale_len": 65536,
+   "scale_dtype": "F16"
+  },
+  "head.layers.0.self_attn.in_proj_weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 80989457,
+   "packed_len": 629146,
+   "scale_off": 6327296,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "head.layers.0.self_attn.out_proj.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 81618603,
+   "packed_len": 209716,
+   "scale_off": 6376448,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "head.layers.1.linear1.weight": {
+   "shape": [
+    4096,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 4096,
+   "packed_off": 81828319,
+   "packed_len": 838861,
+   "scale_off": 6392832,
+   "scale_len": 65536,
+   "scale_dtype": "F16"
+  },
+  "head.layers.1.linear2.weight": {
+   "shape": [
+    1024,
+    4096
+   ],
+   "in_pad": 4096,
+   "groups_per_row": 32,
+   "out_features": 1024,
+   "packed_off": 82667180,
+   "packed_len": 838861,
+   "scale_off": 6458368,
+   "scale_len": 65536,
+   "scale_dtype": "F16"
+  },
+  "head.layers.1.self_attn.in_proj_weight": {
+   "shape": [
+    3072,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 3072,
+   "packed_off": 83506041,
+   "packed_len": 629146,
+   "scale_off": 6523904,
+   "scale_len": 49152,
+   "scale_dtype": "F16"
+  },
+  "head.layers.1.self_attn.out_proj.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 84135187,
+   "packed_len": 209716,
+   "scale_off": 6573056,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  },
+  "scorer.1.weight": {
+   "shape": [
+    1024,
+    1024
+   ],
+   "in_pad": 1024,
+   "groups_per_row": 8,
+   "out_features": 1024,
+   "packed_off": 84344903,
+   "packed_len": 209716,
+   "scale_off": 6589440,
+   "scale_len": 16384,
+   "scale_dtype": "F16"
+  }
+ },
+ "kept": {
+  "act_head.0.bias": {
+   "shape": [
+    256
+   ],
+   "dtype": "float16",
+   "off": 0,
+   "len": 512
+  },
+  "act_head.0.weight": {
+   "shape": [
+    256,
+    1028
+   ],
+   "dtype": "float16",
+   "off": 512,
+   "len": 526336
+  },
+  "act_head.2.bias": {
+   "shape": [
+    2
+   ],
+   "dtype": "float16",
+   "off": 526848,
+   "len": 4
+  },
+  "act_head.2.weight": {
+   "shape": [
+    2,
+    256
+   ],
+   "dtype": "float16",
+   "off": 526852,
+   "len": 1024
+  },
+  "encoder.embeddings.norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 527876,
+   "len": 2048
+  },
+  "encoder.final_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 529924,
+   "len": 2048
+  },
+  "encoder.layers.0.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 531972,
+   "len": 2048
+  },
+  "encoder.layers.1.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 534020,
+   "len": 2048
+  },
+  "encoder.layers.1.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 536068,
+   "len": 2048
+  },
+  "encoder.layers.10.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 538116,
+   "len": 2048
+  },
+  "encoder.layers.10.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 540164,
+   "len": 2048
+  },
+  "encoder.layers.11.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 542212,
+   "len": 2048
+  },
+  "encoder.layers.11.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 544260,
+   "len": 2048
+  },
+  "encoder.layers.12.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 546308,
+   "len": 2048
+  },
+  "encoder.layers.12.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 548356,
+   "len": 2048
+  },
+  "encoder.layers.13.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 550404,
+   "len": 2048
+  },
+  "encoder.layers.13.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 552452,
+   "len": 2048
+  },
+  "encoder.layers.14.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 554500,
+   "len": 2048
+  },
+  "encoder.layers.14.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 556548,
+   "len": 2048
+  },
+  "encoder.layers.15.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 558596,
+   "len": 2048
+  },
+  "encoder.layers.15.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 560644,
+   "len": 2048
+  },
+  "encoder.layers.16.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 562692,
+   "len": 2048
+  },
+  "encoder.layers.16.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 564740,
+   "len": 2048
+  },
+  "encoder.layers.17.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 566788,
+   "len": 2048
+  },
+  "encoder.layers.17.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 568836,
+   "len": 2048
+  },
+  "encoder.layers.18.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 570884,
+   "len": 2048
+  },
+  "encoder.layers.18.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 572932,
+   "len": 2048
+  },
+  "encoder.layers.19.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 574980,
+   "len": 2048
+  },
+  "encoder.layers.19.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 577028,
+   "len": 2048
+  },
+  "encoder.layers.2.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 579076,
+   "len": 2048
+  },
+  "encoder.layers.2.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 581124,
+   "len": 2048
+  },
+  "encoder.layers.20.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 583172,
+   "len": 2048
+  },
+  "encoder.layers.20.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 585220,
+   "len": 2048
+  },
+  "encoder.layers.21.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 587268,
+   "len": 2048
+  },
+  "encoder.layers.21.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 589316,
+   "len": 2048
+  },
+  "encoder.layers.22.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 591364,
+   "len": 2048
+  },
+  "encoder.layers.22.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 593412,
+   "len": 2048
+  },
+  "encoder.layers.23.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 595460,
+   "len": 2048
+  },
+  "encoder.layers.23.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 597508,
+   "len": 2048
+  },
+  "encoder.layers.24.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 599556,
+   "len": 2048
+  },
+  "encoder.layers.24.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 601604,
+   "len": 2048
+  },
+  "encoder.layers.25.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 603652,
+   "len": 2048
+  },
+  "encoder.layers.25.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 605700,
+   "len": 2048
+  },
+  "encoder.layers.26.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 607748,
+   "len": 2048
+  },
+  "encoder.layers.26.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 609796,
+   "len": 2048
+  },
+  "encoder.layers.27.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 611844,
+   "len": 2048
+  },
+  "encoder.layers.27.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 613892,
+   "len": 2048
+  },
+  "encoder.layers.3.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 615940,
+   "len": 2048
+  },
+  "encoder.layers.3.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 617988,
+   "len": 2048
+  },
+  "encoder.layers.4.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 620036,
+   "len": 2048
+  },
+  "encoder.layers.4.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 622084,
+   "len": 2048
+  },
+  "encoder.layers.5.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 624132,
+   "len": 2048
+  },
+  "encoder.layers.5.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 626180,
+   "len": 2048
+  },
+  "encoder.layers.6.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 628228,
+   "len": 2048
+  },
+  "encoder.layers.6.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 630276,
+   "len": 2048
+  },
+  "encoder.layers.7.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 632324,
+   "len": 2048
+  },
+  "encoder.layers.7.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 634372,
+   "len": 2048
+  },
+  "encoder.layers.8.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 636420,
+   "len": 2048
+  },
+  "encoder.layers.8.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 638468,
+   "len": 2048
+  },
+  "encoder.layers.9.attn_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 640516,
+   "len": 2048
+  },
+  "encoder.layers.9.mlp_norm.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 642564,
+   "len": 2048
+  },
+  "head.layers.0.linear1.bias": {
+   "shape": [
+    4096
+   ],
+   "dtype": "float16",
+   "off": 644612,
+   "len": 8192
+  },
+  "head.layers.0.linear2.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 652804,
+   "len": 2048
+  },
+  "head.layers.0.norm1.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 654852,
+   "len": 2048
+  },
+  "head.layers.0.norm1.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 656900,
+   "len": 2048
+  },
+  "head.layers.0.norm2.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 658948,
+   "len": 2048
+  },
+  "head.layers.0.norm2.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 660996,
+   "len": 2048
+  },
+  "head.layers.0.self_attn.in_proj_bias": {
+   "shape": [
+    3072
+   ],
+   "dtype": "float16",
+   "off": 663044,
+   "len": 6144
+  },
+  "head.layers.0.self_attn.out_proj.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 669188,
+   "len": 2048
+  },
+  "head.layers.1.linear1.bias": {
+   "shape": [
+    4096
+   ],
+   "dtype": "float16",
+   "off": 671236,
+   "len": 8192
+  },
+  "head.layers.1.linear2.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 679428,
+   "len": 2048
+  },
+  "head.layers.1.norm1.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 681476,
+   "len": 2048
+  },
+  "head.layers.1.norm1.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 683524,
+   "len": 2048
+  },
+  "head.layers.1.norm2.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 685572,
+   "len": 2048
+  },
+  "head.layers.1.norm2.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 687620,
+   "len": 2048
+  },
+  "head.layers.1.self_attn.in_proj_bias": {
+   "shape": [
+    3072
+   ],
+   "dtype": "float16",
+   "off": 689668,
+   "len": 6144
+  },
+  "head.layers.1.self_attn.out_proj.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 695812,
+   "len": 2048
+  },
+  "scorer.0.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 697860,
+   "len": 2048
+  },
+  "scorer.0.weight": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 699908,
+   "len": 2048
+  },
+  "scorer.1.bias": {
+   "shape": [
+    1024
+   ],
+   "dtype": "float16",
+   "off": 701956,
+   "len": 2048
+  },
+  "scorer.3.bias": {
+   "shape": [
+    1
+   ],
+   "dtype": "float16",
+   "off": 704004,
+   "len": 2
+  },
+  "scorer.3.weight": {
+   "shape": [
+    1,
+    1024
+   ],
+   "dtype": "float16",
+   "off": 704006,
+   "len": 2048
+  },
+  "temperature": {
+   "shape": [
+    3
+   ],
+   "dtype": "float32",
+   "off": 706054,
+   "len": 12
+  },
+  "type_emb.weight": {
+   "shape": [
+    3,
+    1024
+   ],
+   "dtype": "float16",
+   "off": 706066,
+   "len": 6144
+  }
+ },
+ "sizes": {
+  "weights_bin": 84554619,
+  "scales_bin": 6605824,
+  "keep_bin": 712210,
+  "total": 91872653
+ },
+ "stats": {
+  "quantized_tensors": 122,
+  "quantized_params": 422772736,
+  "effective_bits_per_weight": 1.738478292034423
+ }
+}
